@@ -1,0 +1,48 @@
+fn gcd(a_in, b_in) do
+    let mod a = a_in
+    let mod b = b_in
+    while b != 0 do
+        let temp = b
+        b = a % b
+        a = temp
+    end
+    return a
+end
+
+fn lcm(a, b) do
+    if a == 0 or b == 0 then
+        return 0
+    end
+    return (a * b) / gcd(a, b)
+end
+
+fn power(base, exp_in) do
+    let mod exp = exp_in
+    let mod res = 1
+    while exp > 0 do
+        res = res * base
+        exp = exp - 1
+    end
+    return res
+end
+
+fn abs(n) do
+    if n < 0 then
+        return 0 - n
+    end
+    return n
+end
+
+print(111111)
+print(gcd(48, 18))
+
+print(222222)
+print(lcm(12, 15))
+
+print(333333)
+print(power(2, 10))
+print(power(3, 4))
+
+print(444444)
+print(abs(0 - 50))
+print(abs(25))

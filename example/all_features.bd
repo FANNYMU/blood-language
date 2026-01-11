@@ -1,0 +1,78 @@
+print(11111)
+let x = 10
+let mod y = 20
+y = y + 5
+print(y)
+
+print(22222)
+print(x * 2 + 5)
+print(10 % 3)
+
+print(33333)
+if x > 5 and y > 20 then
+    print(1)
+else
+    print(0)
+end
+
+if not (x == 5) then
+    print(2)
+end
+
+print(44444)
+let mod i = 0
+while i < 3 do
+    print(i)
+    i = i + 1
+end
+
+print(55555)
+let mod j = 0
+loop do
+    j = j + 1
+    if j == 2 then
+        continue
+    end
+    if j > 3 then
+        break
+    end
+    print(j)
+end
+
+print(66666)
+fn add(a, b) do
+    return a + b
+end
+print(add(10, 20))
+
+fn fact(n) do
+    if n == 0 then
+        return 1
+    end
+    return n * fact(n - 1)
+end
+print(fact(5))
+
+print(77777)
+let g = 100
+fn shadow_test() do
+    let g = 200
+    print(g)
+end
+shadow_test()
+print(g)
+
+print(88888)
+fn check(n) do
+    if n > 10 then
+        return 1
+    end
+    return 0
+end
+print(check(11))
+print(check(5))
+
+/* This is a
+   multi-line comment
+*/
+// This is a single line comment
